@@ -80,8 +80,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@patternfly/pfe-icon": "^1.12.3",
     "@patternfly/react-core": "^4.181.1",
-    "@patternfly/react-icons": "^4.32.1",
+    "@patternfly/react-icons": "^4.82.8",
     "@patternfly/react-styles": "^4.31.1",
     "@storybook/builder-webpack5": "^6.2.9",
     "react": "^17.0.2",

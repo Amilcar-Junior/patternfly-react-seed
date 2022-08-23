@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Route, RouteComponentProps, Switch } from 'react-router-dom';
 import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
+import { Signature } from '@app/Signature/Signature';
+import { Teste } from '@app/Signature/Teste';
 import { Support } from '@app/Support/Support';
 import { GeneralSettings } from '@app/Settings/General/GeneralSettings';
 import { ProfileSettings } from '@app/Settings/Profile/ProfileSettings';
@@ -35,7 +37,21 @@ const routes: AppRouteConfig[] = [
     exact: true,
     label: 'Dashboard',
     path: '/',
-    title: 'PatternFly Seed | Main Dashboard',
+    title: 'Health 360 | Main Dashboard',
+  },
+  {
+    component: Signature,
+    exact: true,
+    label: 'Assintura',
+    path: '/assinatura',
+    title: 'Health 360 | Assintura',
+  },
+  {
+    component: Teste,
+    exact: true,
+    label: 'Teste',
+    path: '/teste',
+    title: 'Health 360 | Teste',
   },
   {
     component: Support,
@@ -43,7 +59,7 @@ const routes: AppRouteConfig[] = [
     isAsync: true,
     label: 'Support',
     path: '/support',
-    title: 'PatternFly Seed | Support Page',
+    title: 'Health 360 | Support Page',
   },
   {
     label: 'Settings',
@@ -53,14 +69,14 @@ const routes: AppRouteConfig[] = [
         exact: true,
         label: 'General',
         path: '/settings/general',
-        title: 'PatternFly Seed | General Settings',
+        title: 'Health 360 | General Settings',
       },
       {
         component: ProfileSettings,
         exact: true,
         label: 'Profile',
         path: '/settings/profile',
-        title: 'PatternFly Seed | Profile Settings',
+        title: 'Health 360 | Profile Settings',
       },
     ],
   },
